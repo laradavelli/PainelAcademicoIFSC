@@ -2,6 +2,7 @@ streamlit==1.51.0
 streamlit-elements==0.1.0
 streamlit-option-menu>=0.3.0
 pandas>=2.0.0
+pyarrow>=14.0.0
 plotly>=5.0.0
 matplotlib>=3.7.0
 networkx>=3.0
