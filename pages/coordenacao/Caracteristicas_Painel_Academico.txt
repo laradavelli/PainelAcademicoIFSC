@@ -1,0 +1,30 @@
+
+GERAL:
+Inicialmente é feito um upload do arquivo base para todas as funcionalidades do painel acadêmico.
+Assim que um arquivo é upload, fazer a mescla dos dados que já estão no sistema para que todas as observações sobrevivam a re-uploads.
+
+
+
+
+MÓDULOS:
+Conselho intermediário. Usa quase todos os dados do arquivo.
+estudante, matrícula, notas, disciplinas, faltas, 
+
+Pré-requisito. Utiliza os seguintes dados: estudante
+Validação. Utiliza os seguintes dados: estudante
+Matrícula. Utiliza os seguintes dados: estudante
+Protocolo. não usa.
+Ajustes. não usa. 
+
+Conselho Final. Utiliza os seguintes dados: estudante, disciplinas, notas, foto
+
+
+Docentes. Planilha a parte. criada e atualizada diretamente no sistema Painel Acadêmico.
+Discentes. Usa os seguintes dados: estudante, disciplinas,
+Obs. Não se adiciona estudante. Eles vêm do arquivo que é feito uploado na página Home.py
+Nesta página existe a funcionalidade de listar os representandes da turma. Os estudantes são selecionados pelo arquivo de upload, mas os membros representandes são salvos em uma planilha específica (representandes_turma.csv), que é mantida atualizada conforme a atualização na pagina Discentes.
+
+Pedagógico. Utiliza os seguintes dados: estudante, disciplinas, fase, notas, foto
+Obs. também carrega dados da planilha 
+
+

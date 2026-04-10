@@ -1,0 +1,10 @@
+services:
+  painel-academico:
+    build: .
+    container_name: painel-academico
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persiste os dados CSV fora do container
+      - ./dados:/app/dados
+    restart: unless-stopped

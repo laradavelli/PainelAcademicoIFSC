@@ -1,0 +1,107 @@
+{
+  "1": {
+    "ATC": { "pre": [], "co": [], "creditos": 2, "semestre_fim": 10 },
+    "AE1": { "pre": [], "co": [], "creditos": 5 },
+    "CA1": { "pre": [], "co": [], "creditos": 6 },
+    "COM": { "pre": [], "co": [], "creditos": 2 },
+    "GMT": { "pre": [], "co": [], "creditos": 3 },
+    "IEE": { "pre": [], "co": [], "creditos": 2 },
+    "QMG": { "pre": [], "co": [], "creditos": 3 }
+  },
+  "2": {
+    "ALG": { "pre": ["GMT"], "co": [], "creditos": 3 },
+    "CA2": { "pre": ["CA1"], "co": [], "creditos": 4 },
+    "CMT": { "pre": ["QMG"], "co": [], "creditos": 2 },
+    "ELB": { "pre": [], "co": [], "creditos": 2 },
+    "ETP": { "pre": ["CA1"], "co": [], "creditos": 3 },
+    "FI1": { "pre": ["CA1"], "co": [], "creditos": 4 },
+    "MPQ": { "pre": [], "co": [], "creditos": 2 },
+    "PI1": { "pre": [], "co": [], "creditos": 2 }
+  },
+  "3": {
+    "CA3": { "pre": ["CA2"], "co": [], "creditos": 4 },
+    "CE1": { "pre": ["ELB"], "co": ["FI3"], "creditos": 3 },
+    "FEX": { "pre": ["FI1"], "co": [], "creditos": 2 },
+    "FI3": { "pre": ["FI1"], "co": [], "creditos": 4 },
+    "MEC": { "pre": ["FI1"], "co": [], "creditos": 2 },
+    "PRG": { "pre": [], "co": [], "creditos": 3 },
+    "SEG": { "pre": [], "co": [], "creditos": 2 }
+  },
+  "4": {
+    "CA4": { "pre": ["CA3"], "co": [], "creditos": 4 },
+    "CE2": { "pre": ["CE1"], "co": [], "creditos": 3 },
+    "DTE": { "pre": [], "co": [], "creditos": 3 },
+    "EMG": { "pre": ["CA3", "FI3"], "co": [], "creditos": 4 },
+    "FEN": { "pre": [], "co": ["FI2"], "creditos": 2 },
+    "FI2": { "pre": ["FI1"], "co": [], "creditos": 4 }
+  },
+  "5": {
+    "AE2": { "pre": ["AE1"], "co": ["ESC"], "creditos": 6 },
+    "CAN": { "pre": ["ALG", "PRG"], "co": [], "creditos": 3 },
+    "CE3": { "pre": ["CA4", "CE2"], "co": [], "creditos": 3 },
+    "CO1": { "pre": ["EMG", "CE2"], "co": [], "creditos": 4 },
+    "EL1": { "pre": ["CE1"], "co": [], "creditos": 4 },
+    "ESC": { "pre": [], "co": ["AE2"], "creditos": 2 }
+  },
+  "6": {
+    "ASL": { "pre": ["CE3"], "co": [], "creditos": 4 },
+    "CO2": { "pre": ["CO1"], "co": [], "creditos": 5 },
+    "ELD": { "pre": ["EL1"], "co": [], "creditos": 3 },
+    "EL2": { "pre": ["EL1", "CE3"], "co": [], "creditos": 4 },
+    "QEE": { "pre": ["CE2", "CA4"], "co": [], "creditos": 2 }
+  },
+  "7": {
+    "ACI": { "pre": ["CO2"], "co": [], "creditos": 3 },
+    "CTC": { "pre": ["ASL"], "co": [], "creditos": 5 },
+    "EP1": { "pre": ["EL2"], "co": [], "creditos": 4 },
+    "IST": { "pre": ["EL2"], "co": [], "creditos": 2 },
+    "MIC": { "pre": ["ELD", "PRG"], "co": [], "creditos": 4 },
+    "PEP": { "pre": ["CE2", "DTE"], "co": [], "creditos": 4 }
+  },
+  "8": {
+    "AUI": { "pre": ["ACI"], "co": [], "creditos": 4 },
+    "EP2": { "pre": ["EP1"], "co": [], "creditos": 4 },
+    "PEI": { "pre": ["PEP", "ACI"], "co": [], "creditos": 4 },
+    "PI2": { "pre": ["PI1"], "co": ["AUI", "CTC", "IST"], "creditos": 4 },
+    "SEE": { "pre": ["CO2", "QEE"], "co": [], "creditos": 4 }
+  },
+  "9": {
+    "AE3": { "pre": ["AE2"], "co": [], "creditos": 7 },
+    "ADM": { "pre": [], "co": [], "creditos": 2 },
+    "ENS": { "pre": ["QEE"], "co": [], "creditos": 2 },
+    "SGT": { "pre": ["SEE"], "co": [], "creditos": 3 },
+    "TC1": { "pre": ["PI2", "SEE", "PEI", "AUI"], "co": [], "creditos": 1 },
+    "OP1": { "pre": [], "co": [], "creditos": 2 },
+    "OP2": { "pre": [], "co": [], "creditos": 2 },
+    "EST": { "pre": ["PI2", "AUI"], "co": [], "creditos": 8, "semestre_fim": 10 }
+  },
+  "10": {
+    "ATE": { "pre": ["PEP"], "co": [], "creditos": 2 },
+    "ECO": { "pre": [], "co": [], "creditos": 2 },
+    "IND": { "pre": ["AUI"], "co": [], "creditos": 2 },
+    "TC2": { "pre": ["TC1"], "co": [], "creditos": 6 },
+    "OP3": { "pre": [], "co": [], "creditos": 2 },
+    "OP4": { "pre": [], "co": [], "creditos": 2 }
+  },
+  "optativas": {
+    "ATE": { "pre": ["PEP"], "co": [], "creditos": 2 },
+    "CDI": { "pre": ["CTC"], "co": [], "creditos": 2 },
+    "CEM": { "pre": ["EL2", "ASL", "EMG"], "co": [], "creditos": 2 },
+    "CME": { "pre": ["CO2", "CTC", "EP2"], "co": [], "creditos": 2 },
+    "CTM": { "pre": ["CTC"], "co": [], "creditos": 2 },
+    "DLP": { "pre": ["MIC"], "co": [], "creditos": 2 },
+    "EGP": { "pre": ["ADM"], "co": [], "creditos": 2 },
+    "ELA": { "pre": ["EL2", "ASL"], "co": [], "creditos": 2 },
+    "EPT": { "pre": ["EP2"], "co": [], "creditos": 2 },
+    "ICO": { "pre": ["PSC"], "co": [], "creditos": 2 },
+    "IDW": { "pre": ["PRG"], "co": [], "creditos": 2 },
+    "OTM": { "pre": ["CAN"], "co": [], "creditos": 2 },
+    "PDS": { "pre": ["MIC", "ASL"], "co": [], "creditos": 2 },
+    "POO": { "pre": ["PRG"], "co": [], "creditos": 2 },
+    "PRD": { "pre": ["PRG"], "co": [], "creditos": 2 },
+    "PSC": { "pre": ["EL2"], "co": [], "creditos": 2 },
+    "PSE": { "pre": ["SEE"], "co": [], "creditos": 2 },
+    "REC": { "pre": ["SEE"], "co": [], "creditos": 2 },
+    "RED": { "pre": ["PRG"], "co": [], "creditos": 2 }
+  }
+}
